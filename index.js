@@ -23,7 +23,7 @@ const promptQuestions = () => {
 }
 promptQuestions()
     .then( answer => {
-        console.log(answer)
+        console.table(answer)
     })
 
 module.export = promptQuestions

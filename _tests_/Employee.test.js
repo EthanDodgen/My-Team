@@ -1,11 +1,13 @@
-const Employee = require("../lib/Employee")
+const Employee = require("../lib/Employee.js")
+
+const index = require("../index.js")
 
 test("creates employee object", () => {
-    const employee = new Employee("Manager")
+    const employee = new Employee(answer)
     
-    expect(employee.name).toBe("Manager")
+    expect(employee.name).toBe("")
     expect(employee.id).toEqual(expect.any(Number))
-    expect(employee.email).toBe("rad")
+    expect(employee.email).toBe("")
 })
 
 test("gets players name", () => {
