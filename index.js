@@ -1,7 +1,10 @@
 const promptQuestions = () => {
     return inquirer.prompt([
         {
-            type
+         type: "input",
+         name: "employee name",
+         message: "Enter employee name."
         }
     ])
 }
+promptQuestions()
