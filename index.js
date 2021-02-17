@@ -40,9 +40,6 @@ const promptMenu = () => {
          choices: ["Add Engineer.", "Add Intern.", "Finish building team."]
         }
     ])
-
-    
-    
 }
 
 promptManager()
@@ -51,11 +48,7 @@ promptManager()
         console.table(employee)
     })
     .then(promptMenu)
-    //.then(promptAnswer => console.log(promptAnswer)
     
-
-    
-
 module.exports = promptManager
 
 
