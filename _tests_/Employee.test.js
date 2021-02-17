@@ -1,12 +1,66 @@
 const Employee = require("../lib/Employee.js")
-const mock = require("../lib/__mocks__/Employee")
-jest.mock('../lib/Employee.js')
 
 test("creates employee object", () => {
-    const employee = new Employee()
+    let property = {
+        name: "Tammy",
+        id: 45,
+        email: "ethan@gmail.com"
+    }
+
+    const employee = new Employee(property)
     
     expect(employee.name).toBe("Tammy")
     expect(employee.id).toBe(45)
     expect(employee.email).toBe("ethan@gmail.com")
 })
+
+
+test("gets name through method", () => {
+    let property = {
+        name: "Tammy",
+        id: 45,
+        email: "ethan@gmail.com",
+    }
+
+    const employee = new Employee(property)
+
+    expect(employee.getName()).toBe("Tammy")
+})
+
+test("gets id through method", () => {
+    let property = {
+        name: "Tammy",
+        id: 45,
+        email: "ethan@gmail.com",
+    }
+
+    const employee = new Employee(property)
+
+    expect(employee.getId()).toBe(45)
+})
+
+test("gets email through method", () => {
+    let property = {
+        name: "Tammy",
+        id: 45,
+        email: "ethan@gmail.com",
+    }
+
+    const employee = new Employee(property)
+
+    expect(employee.getEmail()).toBe("ethan@gmail.com")
+})
+
+test("gets role through method", () => {
+    let property = {
+        name: "Tammy",
+        id: 45,
+        email: "ethan@gmail.com",
+    }
+
+    const employee = new Employee(property)
+
+    expect(employee.getRole()).toBe(Employee)
+})
+
 
