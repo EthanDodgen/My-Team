@@ -48,6 +48,9 @@ promptManager()
         console.table(employee)
     })
     .then(promptMenu)
+    .then(answer => {
+        console.log(answer.menu)
+    })
     
 module.exports = promptManager
 
