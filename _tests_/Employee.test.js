@@ -1,48 +1,12 @@
 const Employee = require("../lib/Employee.js")
-//const index = require("./index.js")
+const mock = require("../lib/__mocks__/Employee")
+jest.mock('../lib/Employee.js')
 
 test("creates employee object", () => {
-    let Billy = {
-        name: "Tammy",
-        id: 45,
-        email: "ethan@gmail.com"
-    }
-    const employee = new Employee(Billy)
+    const employee = new Employee()
     
-    expect(employee.getName()).toBe("Tammy")
-    expect(employee.getId()).toEqual(45)
-    expect(employee.getEmail()).toBe("ethan@gmail.com")
+    expect(employee.name).toBe("Tammy")
+    expect(employee.id).toBe(45)
+    expect(employee.email).toBe("ethan@gmail.com")
 })
 
-test("gets players name", () => {
-    let answer = {
-        name: "Tammy",
-        id: "45",
-        email: "ethan@gmail.com"
-    }
-    const employee = new Employee(answer)
-
-    expect(employee.getName()).toHaveProperty("Tammy")
-})
-
-test("gets players Id", () => {
-    let answer = {
-        name: "",
-        id: "",
-        email: ""
-    }
-    const employee = new Employee(answer)
-
-    expect(employee.getId()).toHaveProperty("")
-})
-
-test("gets players Email", () => {
-    let answer = {
-        name: "",
-        id: "",
-        email: ""
-    }
-    const employee = new Employee(answer)
-
-    expect(employee.getEmail()).toHaveProperty("")
-})

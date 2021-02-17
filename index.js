@@ -25,8 +25,8 @@ const promptQuestions = () => {
 promptQuestions()
     .then( answer => {
         const employee = new Employee(answer)
-        //console.table(employee)
-        //console.log(employee.getName())
+        console.table(employee.getName())
+       
     })
 
 module.exports = promptQuestions
