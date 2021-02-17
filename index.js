@@ -1,4 +1,5 @@
 const inquirer = require('inquirer')
+const Employee = require("./lib/Employee.js")
 
 const promptQuestions = () => {
     return inquirer.prompt([
@@ -23,7 +24,16 @@ const promptQuestions = () => {
 }
 promptQuestions()
     .then( answer => {
-        console.table(answer)
+        const employee = new Employee(answer)
+        //console.table(employee)
+        //console.log(employee.getName())
     })
 
-module.export = promptQuestions
+module.exports = promptQuestions
+
+
+
+
+
+    
+
