@@ -14,7 +14,7 @@ Create an Employee List
 
 
 ## Website
-[Visit the page here!] (file:///C:/Users/whisk/Desktop/Repo/my-team/index.html/)
+[Visit the page here!] (https://ethandodgen.github.io/My-Team//)
 
 ## Video
 
