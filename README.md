@@ -1,54 +1,21 @@
-# Dendrite
+# My-Team
 
 
 ## Usage
-To obtain daily knowledge using an array of proven memorization methods.
-
-
-## Install
-```
-
-1. Clone links for your local path 
-HTTP- https://github.com/Calterat/dendrite.git
-SSH- git@github.com:Calterat/dendrite.git
-GITHUB CLI- gh repo clone Calterat/dendrite
-
-Example 
-git clone https://github.com/Calterat/dendrite.git
-```
-
-
-
-## API
-```
-
-Sign up for and get an API key over at http/: etc, etc 
-
-Put your public and private API keys in a config file in your checkout, like this 
-
-{
-  "publickey": "00000000000000000",
-  "privatekey": "111111111111111111"
-}
-```
-
+Create an Employee List
 
 ## Built Wtih
 *HTML
 *CSS
 *JavaScript
-*Jquery
-
+*Inquirer
+*Jest
+*Bootstrap
 
 
 ## Website
-[Visit the page here!](https://calterat.github.io/dendrite/)
+[Visit the page here!] (https://ethandodgen.github.io/My-Team/)
 
+## Video
 
-## Contribution
-Julian Gillis
-Brooklyn Bissinger
-Jack Novotny 
-Ethan Dodgen
-
-### ©️2020 Dendrite, Inc 
+(https://drive.google.com/file/d/1vwVaVgMxym9CBa70wyzWpouw9DIO89Ef/view)
