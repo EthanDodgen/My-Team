@@ -19,3 +19,6 @@ Create an Employee List
 ## Video
 
 (https://drive.google.com/file/d/1vwVaVgMxym9CBa70wyzWpouw9DIO89Ef/view)
+
+## Repository
+(https://github.com/EthanDodgen/My-Team)
