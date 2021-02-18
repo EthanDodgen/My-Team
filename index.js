@@ -5,6 +5,8 @@ const Engineer = require("./lib/Engineer.js")
 const Intern = require("./lib/Intern.js")
 const generatePage = require("./src/template.js")
 
+const askData = []
+
 
 
 
@@ -109,8 +111,7 @@ promptManager()
         const employee = new Manager(answer)
         console.table(employee)
         console.log(employee.name)
-            
-})
+    })
     .then(promptMenu)
     .then(answer => {
         if (answer.menu === "Add Engineer" ) {
@@ -150,7 +151,8 @@ promptManager()
             }
             else { 
             if (answer.menu === "Finish building team" ) {
-                //generatePage()
+            generatePage(employee, intern, engineer)
+            console.log(generatePage(employee, intern, engineer))
             }   
             }     
         

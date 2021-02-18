@@ -1,4 +1,4 @@
-module.exports = generatePage = (employee, engineer, intern) => {
+module.exports = generatePage = (employee, intern, engineer) => {
 return `
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@ return `
     <main>
         <div class="card" style="width: 18rem">
             <ul class="list-group list-group-flush">
-                <li class="card-header">Manager</li>
+                <li class="card-header">${employee.name}</li>
                 <li class="list-group-item">name</li>
                 <li class="list-group-item">employee iD</li>
                 <li class="list-group-item">email</li>
